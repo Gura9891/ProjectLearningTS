@@ -19,8 +19,7 @@ Mật khẩu: Giang123@
    - Thêm, xóa, sửa người dùng
    - Ghi danh, hủy ghi danh khóa học cho người dùng
 2. Quản lí khóa học
-   - Thêm, xóa, sửa khóa học
    - Ghi danh, hủy ghi danh người dùng vào các khóa học
-
+   - Thêm, xóa, sửa khóa học
 
 # Nguyễn Tường Giang
