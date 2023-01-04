@@ -1,0 +1,18 @@
+.navbar {
+  .navbar-brand {
+  }
+  .navbar-collapse {
+    ul {
+      .nav-item {
+        .dropdown-toggle::after {
+          display: none !important;
+        }
+        .btn-click {
+          &:active {
+            background-color: black;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.update {
+  .container {
+    .nav {
+      transform: translateX(10px);
+      .nav-link {
+        background-color: $c3-bg-gray;
+        color: $c5-black;
+        border-radius: 10px 10px 0 0;
+      }
+      .active {
+        background-color: $c5-bg-dark-yellow;
+        color: $c5-black;
+      }
+    }
+    .tab-content {
+      margin-bottom: 40px;
+
+      .tab-pane {
+        .contain {
+          padding: 40px 0;
+          .form {
+            @media screen and (max-width: 1200px) {
+              justify-content: space-evenly !important;
+            }
+            .form-group {
+              position: relative;
+              width: 400px;
+              height: 100px;
+              @media screen and (max-width: 1200px) {
+                width: 80%;
+              }
+
+              .input-group {
+                outline: none;
+                border-radius: 0;
+                h2 {
+                  font-size: $text-small;
+                  margin-left: 25px;
+                }
+
+                input {
+                  border: none;
+                  font-size: $text-x-small;
+                  background: rgba(33, 33, 33, 0.08);
+                  height: 54px;
+                  margin-left: 25px;
+
+                  &:focus {
+                    outline: none;
+                    box-shadow: none;
+                  }
+                  &::placeholder {
+                    font-weight: $text-regular;
+                    font-size: $text-x-small;
+                    line-height: 36px;
+                  }
+                }
+              }
+              button {
+                position: absolute;
+                top: 45%;
+                right: 20px;
+                border: none;
+              }
+              span {
+                position: relative;
+                z-index: 10;
+                color: $c6-red;
+                margin-left: 25px;
+              }
+
+              span {
+              }
+            }
+            .info {
+              @media screen and (max-width: 1200px) {
+                flex-direction: row !important;
+                margin-left: 79px;
+              }
+              
+              
+              .submit {
+                :hover {
+                  background-color: $c5-bg-dark-yellow;
+                  color:$c5-black ;
+                }
+                width: 140px;
+                height: 40px;
+                border-radius: 5px;
+                transform: translate(-143px, -86px);
+                background-color: $color2;
+                box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14),
+                  0px 1px 10px rgba(0, 0, 0, 0.12),
+                  0px 2px 4px rgba(0, 0, 0, 0.2);
+                color: $c7-white;
+                text-align: center;
+                border: none;
+                font-weight: $text-regular;
+                font-size: $text-big;
+                line-height: 24px;
+                @media screen and (max-width: 1200px) {
+                  transform: translateX(0%);
+                }
+                button{
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

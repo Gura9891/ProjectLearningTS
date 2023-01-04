@@ -1,0 +1,26 @@
+// base
+@import './Base/base';
+
+
+//variable
+@import './themes/variable';
+
+
+// pages
+@import "./Pages/header.scss";
+@import "./Pages/footer.scss";
+@import "./Pages/home.scss";
+@import "./Pages/category.scss";
+// @import './pages/index.scss';
+// @import "./pages/detail.scss";
+@import "./pages/register.scss";
+@import "./pages/login.scss";
+@import "./pages/profile.scss";
+@import './pages/adminTemplate';
+// @import "./pages/search.scss"
+
+
+//vendor 
+@import './vendor/animate';
+@import './vendor/antd';
+

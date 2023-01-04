@@ -1,0 +1,146 @@
+#adminTemplate {
+  @import "../vendor/skeudo.scss";
+  min-height: 100vh;
+  background-color: $admin-color-secondary;
+  color: $admin-color-text;
+  @media screen and (max-width: 991px) {
+    overflow: hidden;
+  }
+  @media screen and (max-width: 576px) {
+    overflow: hidden;
+    flex-direction: column;
+  }
+  ul {
+    padding: 0;
+  }
+  .bi {
+    font-size: $text-big;
+    margin-right: 10px;
+  }
+  .admin-navbar {
+    height: 100vh;
+    padding: 50px;
+    background-color: $admin-color-primary;
+    border-radius: 0 50px 50px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    @media screen and (max-width: 991px) {
+      display: none !important;
+    }
+    &-mobile {
+      display: none;
+      background-color: $admin-color-primary;
+      justify-content: space-between;
+      width: 100%;
+      height: 70px;
+      padding: 10px;
+      position: fixed;
+      z-index: 10000;
+      &-dropdown {
+        button {
+          background: #f2d388;
+          box-shadow: 5px 5px 10px #ceb374, -5px -5px 10px #fff39c;
+        }
+      }
+      .offcanvas {
+        background-color: transparent;
+        border: none;
+        &-body {
+          background-color: $admin-color-primary;
+          border-radius: 0 0 20px 20px;
+          a {
+            width: 100%;
+            display: block;
+            margin: 10px 0;
+            color: $admin-color-text;
+            transition: 0.5s ease;
+            padding: 10px;
+            &:hover {
+              border-radius: 20px;
+              background: #f2d388;
+              box-shadow: 11px 11px 22px #ceb374, -11px -11px 22px #fff39c;
+            }
+          }
+          .isactive {
+            padding: 10px;
+            transition: 0.5s ease;
+            border-radius: 20px;
+            background: #f2d388;
+            box-shadow: 11px 11px 22px #ceb374, -11px -11px 22px #fff39c;
+          }
+        }
+      }
+      @media screen and (max-width: 991px) {
+        display: flex;
+        height: fit-content;
+        align-items: center;
+      }
+      @media screen and (max-width: 576px) {
+        height: 70px;
+      }
+    }
+    &-brand {
+      width: fit-content;
+      padding: 20px;
+      border-radius: 20px;
+      background: #f2d388;
+      box-shadow: inset 5px 5px 10px #ceb374, inset -5px -5px 10px #fff39c;
+      img {
+        width: 180px;
+      }
+      @media screen and (max-width:991px) {
+        padding: 10px;
+        img {
+          height: 60px;
+        }
+      }
+      
+      @media screen and (max-width: 576px) {
+        padding: 0;
+        box-shadow: none;
+      }
+      
+    }
+    &-items {
+      margin-top: 100px;
+      a {
+        width: 100%;
+        display: block;
+        margin: 30px 0;
+        color: $admin-color-text;
+        transition: 0.5s ease;
+        padding: 20px;
+        &:hover {
+          border-radius: 20px;
+          background: #f2d388;
+          box-shadow: 11px 11px 22px #ceb374, -11px -11px 22px #fff39c;
+        }
+      }
+      .isactive {
+        padding: 25px;
+        transition: 0.5s ease;
+        border-radius: 20px;
+        background: #f2d388;
+        box-shadow: 11px 11px 22px #ceb374, -11px -11px 22px #fff39c;
+      }
+    }
+  }
+  .admin-content {
+    width: 100%;
+    height: 100%;
+    margin: 40px;
+    @media screen and (max-width: 991px) {
+      width: 90vw;
+      margin-top: 140px;
+    }
+    @media screen and (max-width: 576px) {
+      width: auto;
+      margin-top: 110px;
+    }
+  }
+}
+@import "./homeAdmin";
+@import "./userAdmin";
+@import "./courseAdmin";

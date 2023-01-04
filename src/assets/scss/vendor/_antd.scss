@@ -1,0 +1,130 @@
+.ant-modal {
+  @import "./skeudo";
+  color: $admin-color-text;
+  min-width: 800px !important;
+  //layout
+  .ant-modal-content {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: $admin-color-secondary;
+    @media screen and (max-width: 991px) {
+      width: 90vw;
+      position: sticky;
+      left: 5vw;
+      right: 5vw;
+      .ant-modal-body {
+        .row {
+          flex-direction: column;
+          .form-item {
+            width: 100%;
+            input {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .ant-modal-header {
+      background-color: $admin-color-secondary;
+      border: 0;
+      .ant-modal-title {
+        color: $admin-color-text;
+        font-size: 20px;
+      }
+    }
+    //button
+    .ant-btn {
+      line-height: 0;
+    }
+    .ant-modal-close {
+      @extend .red-button;
+      padding: 0;
+      margin: 20px;
+    }
+    .ant-modal-close-x {
+      line-height: 46px;
+    }
+    .ant-btn-dangerous {
+      @extend .red-button;
+      padding: 20px;
+      height: 50px;
+    }
+    .ant-btn-primary {
+      @extend .blue-button;
+      padding: 20px;
+      height: 50px;
+    }
+  }
+}
+//antd table
+.ant-spin-container {
+  .ant-table {
+    background-color: transparent;
+    &-container {
+      &::after, &::before {
+        box-shadow: none !important;
+      }
+    }
+  }
+  .ant-table-content {
+    @media screen and (max-width: 991px) {
+      overflow: scroll;
+    }
+    @extend .paper;
+    .ant-table-thead > tr > th {
+      background-color: transparent;
+    }
+    .ant-table-tbody > tr.ant-table-row:hover > td,
+    .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+      background-color: transparent;
+    }
+    .ant-table-row:hover {
+      overflow: hidden;
+      transition: 0.5s ease;
+      border-radius: 10px;
+      box-shadow: 0 0 transparent, 0 0 transparent,
+        inset 3px 3px 5px rgb(0 0 0 / 10%),
+        inset -3px -3px 5px rgba(255, 255, 255, 0.733);
+    }
+    // button
+  }
+  .ant-btn {
+    line-height: unset;
+  }
+  .ant-pagination-item-link {
+    @extend .blue-button;
+  }
+  .ant-pagination-prev .ant-pagination-item-link,
+  .ant-pagination-next .ant-pagination-item-link {
+    line-height: 100%;
+  }
+  .ant-pagination-item {
+    box-shadow: 6px 6px 10px rgb(0 0 0 / 10%), -6px -6px 10px white;
+    border-radius: 6px 6px 8px 8px;
+    background: #f2f3f7;
+    border: none;
+    &:hover {
+      @extend .blue-button;
+      a {
+       color: white !important;
+     }
+    }
+    &-link {
+      .anticon {
+        line-height: 31px;
+        height: 100%;
+      }
+    }
+  }
+  .ant-pagination-item-active {
+    background: #367bf0;
+    box-shadow: 0 0 0.5em rgb(54 123 240 / 70%), 0 0 transparent, inset 0 -5px 0 rgb(0 0 0 / 5%), inset 0 2px 0 rgb(255 255 255 / 20%);
+    border-radius: 6px 6px 8px 8px;
+    a {
+    color: white !important;
+    }
+  }
+  .ant-select-selector {
+    @extend .blue-button;
+  }
+}

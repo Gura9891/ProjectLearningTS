@@ -1,0 +1,113 @@
+.login {
+    padding: 30px 120px;
+    .contain {
+      .title {
+        margin-top: 52px;
+        text-align: left;
+      }
+      hr {
+        margin-bottom: 52px;
+      }
+      .form {
+        .form-group {
+          position: relative;
+          width: 482px;
+          height: 100px;
+          @media screen and (max-width: 1200px) {
+            width: 90%;
+          }
+  
+          .input-group {
+            outline: none;
+            border-bottom: 2px solid $c5-black;
+            border-radius: 0;
+            h2 {
+              font-size: $text-small;
+            }
+  
+            input {
+              border: none;
+              border-radius: 0;
+  
+              font-size: $text-x-small;
+              //   background: rgba(33, 33, 33, 0.08);
+              height: 54px;
+  
+              &:focus {
+                outline: none;
+                box-shadow: none;
+              }
+              &::placeholder {
+                font-weight: $text-regular;
+                font-size: $text-x-small;
+                line-height: 36px;
+              }
+            }
+          }
+          button {
+            position: absolute;
+            top: 45%;
+            right: 20px;
+            border: none;
+          }
+          span {
+            position: relative;
+            z-index: 10;
+            color: $c6-red;
+          }
+          
+          span {
+          }
+        }
+        .submit {
+          :hover {
+            background-color: $c5-bg-dark-yellow;
+          }
+          width: 100%;
+  
+          @media screen and (max-width: 1200px) {
+            text-align: start;
+          }
+  
+          button {
+            width: 158px;
+            height: 58px;
+  
+            background-color: $color2;
+            box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14),
+              0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            color: $c5-black;
+            border: none;
+            font-weight: $text-light;
+            font-size: $text-medium;
+            line-height: 36px;
+  
+            @media screen and (max-width: 576px) {
+              margin-right: 10px;
+            }
+          }
+        }
+        .signUp {
+          :hover {
+            background-color: $c5-bg-dark-yellow;
+          }
+          button {
+            width: 131px;
+            height: 58px;
+            // transform: translateX(-290%);
+            background-color: $color2;
+            box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14),
+              0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            color: $c5-black;
+            border: none;
+            font-weight: $text-light;
+            font-size: $text-medium;
+            line-height: 36px;
+          }
+        }
+      }
+    }
+  }
+  

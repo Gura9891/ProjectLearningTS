@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.register {
+  padding: 30px 120px;
+}
+.register .contain .title {
+  margin-top: 52px;
+  text-align: left;
+}
+.register .contain hr {
+  margin-bottom: 52px;
+}
+.register .contain .form .form-group {
+  position: relative;
+  width: 482px;
+  height: 100px;
+}
+@media screen and (max-width: 1200px) {
+  .register .contain .form .form-group {
+    width: 90%;
+  }
+}
+.register .contain .form .form-group .input-group {
+  outline: none;
+  border-bottom: 2px solid #1e1d1d;
+  border-radius: 0;
+}
+.register .contain .form .form-group .input-group h2 {
+  font-size: 18px;
+}
+.register .contain .form .form-group .input-group input {
+  border: none;
+  border-radius: 0;
+  font-size: 16px;
+  height: 54px;
+}
+.register .contain .form .form-group .input-group input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.register .contain .form .form-group .input-group input::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+}
+.register .contain .form .form-group button {
+  position: absolute;
+  top: 45%;
+  right: 20px;
+  border: none;
+}
+.register .contain .form .form-group span {
+  position: relative;
+  z-index: 10;
+  color: #fc0303;
+}
+.register .contain .form .form-group #gender {
+  width: 482px;
+  height: 68px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 18px;
+  align-items: baseline;
+}
+.register .contain .form .form-group #gender p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+.register .contain .form .submit {
+  width: 100%;
+}
+.register .contain .form .submit :hover {
+  background-color: #fbc02d;
+}
+@media screen and (max-width: 1200px) {
+  .register .contain .form .submit {
+    text-align: start;
+  }
+}
+.register .contain .form .submit button {
+  width: 131px;
+  height: 58px;
+  background-color: #fdd835;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  color: #1e1d1d;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+}
+@media screen and (max-width: 1200px) {
+  .register .contain .form .submit button {
+    transform: translateX(0%);
+  }
+}
+.register .contain .form .signIn :hover {
+  background-color: #fbc02d;
+}
+.register .contain .form .signIn button {
+  width: 158px;
+  height: 58px;
+  background-color: #fdd835;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  color: #1e1d1d;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.login {
+  padding: 30px 120px;
+}
+.login .contain .title {
+  margin-top: 52px;
+  text-align: left;
+}
+.login .contain hr {
+  margin-bottom: 52px;
+}
+.login .contain .form .form-group {
+  position: relative;
+  width: 482px;
+  height: 100px;
+}
+@media screen and (max-width: 1200px) {
+  .login .contain .form .form-group {
+    width: 90%;
+  }
+}
+.login .contain .form .form-group .input-group {
+  outline: none;
+  border-bottom: 2px solid #1e1d1d;
+  border-radius: 0;
+}
+.login .contain .form .form-group .input-group h2 {
+  font-size: 18px;
+}
+.login .contain .form .form-group .input-group input {
+  border: none;
+  border-radius: 0;
+  font-size: 16px;
+  height: 54px;
+}
+.login .contain .form .form-group .input-group input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.login .contain .form .form-group .input-group input::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+}
+.login .contain .form .form-group button {
+  position: absolute;
+  top: 45%;
+  right: 20px;
+  border: none;
+}
+.login .contain .form .form-group span {
+  position: relative;
+  z-index: 10;
+  color: #fc0303;
+}
+.login .contain .form .form-group #gender {
+  width: 482px;
+  height: 68px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 18px;
+  align-items: baseline;
+}
+.login .contain .form .form-group #gender p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+.login .contain .form .submit {
+  width: 100%;
+}
+.login .contain .form .submit :hover {
+  background-color: #fbc02d;
+}
+@media screen and (max-width: 1200px) {
+  .login .contain .form .submit {
+    text-align: start;
+  }
+}
+.login .contain .form .submit button {
+  width: 158px;
+  height: 58px;
+  background-color: #fdd835;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  color: #1e1d1d;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+}
+@media screen and (max-width: 1200px) {
+  .login .contain .form .submit button {
+    transform: translateX(0%);
+  }
+}
+.login .contain .form .signUp :hover {
+  background-color: #fbc02d;
+}
+.login .contain .form .signUp button {
+  width: 131px;
+  height: 58px;
+  background-color: #fdd835;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  color: #1e1d1d;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+}
